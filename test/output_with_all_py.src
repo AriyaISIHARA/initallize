@@ -1,0 +1,20 @@
+"""__init__ sample without __all__ definition"""
+
+from .inner_module import (
+    InnerModuleClass,
+    INNER_MODULE_CONSTANT,
+    inner_module_function,
+)
+
+
+'''
+some other stuffs may go before __all__ definition,
+such as this comment.
+'''
+
+
+__all__ = (
+    'inner_module_function',
+    'InnerModuleClass',
+    'INNER_MODULE_CONSTANT',
+)
