@@ -1,1 +1,3 @@
 # initallize
+
+document not ready
