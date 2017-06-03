@@ -73,10 +73,10 @@ __all__ = (
 Constructor `initallize.Initallize(dname)`
 takes one positional argument `dname` to specify
 the directory of one `__init__.py` file,
-and it seeks the code to fetch identifiers.
+and it seeks the code to fetch identifier names.
 
 - First, it searches `/^__all__\s+=/` occurrence and
-  read the code before the match; it reads the whold code
+  read the code before the match; it reads the whole code
   if no `__all__` definition is found.
 - Next, it seeks
   `(from <something>)? import (<something> as)? <identifier>`
@@ -93,7 +93,7 @@ and the instance holds the 'before_all' code of the
 original `__init__.py` and the detected identifier names.
 
 Calling `write(file)` method writes down the
-'*all_*updated' `__init__.py` file to `file`.
+'all_updated' `__init__.py` file to `file`.
 
 ## Requirement
 
@@ -142,6 +142,8 @@ to be improved:
 
 PR satisfying the above or other issues,
 or testcases criticizing the issues are very welcome.
+(For testcases, please `@skip` new testcases so that
+the PR can be directly merged)
 
 ## Poems
 
