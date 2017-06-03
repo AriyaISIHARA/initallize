@@ -23,6 +23,9 @@ class InitallizeTest(TestCase):
     def test_without_all(self):
         self._test_initallize('without_all')
 
+    def test_readme(self):
+        self._test_initallize('readme_demo')
+
     def _test_initallize(self, name):
         from io import StringIO
         import shutil
@@ -34,7 +37,6 @@ class InitallizeTest(TestCase):
         out_src = os.path.join(rootdir, f'output_{name}_py.src')
         module_dir = _request_new_dir(rootdir, 'tmp_module_')
         init_fpath = os.path.join(module_dir, '__init__.py')
-        module_fpath = os.path.join(module_dir, 'inner_module.py')
 
         with open(out_src) as fin:
             expected_result = fin.read()
