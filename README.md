@@ -1,5 +1,4 @@
 # initallize
-====
 
 ## Overview
 
@@ -116,9 +115,11 @@ will change every `__init__.py` under the `<root dir>` directory.
 ### Class Reference
 
 - class *initallize.Initallize*(dname)
+
     Reads `<dname>/__init__.py` and searches identifiers.
 
   - *write*(file)
+
     Writes updated `__init__.py` to `file`.
 
 ## Install
