@@ -23,6 +23,9 @@ class InitallizeTest(TestCase):
     def test_without_all(self):
         self._test_initallize('without_all')
 
+    def test_readme(self):
+        self._test_initallize('readme_demo')
+
     def _test_initallize(self, name):
         from io import StringIO
         import shutil
