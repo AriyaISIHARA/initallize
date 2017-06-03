@@ -107,7 +107,7 @@ or later; the author loves PEP498.
 From a shell,
 
 ```
-python 'initallize' <root dir>
+python 'initallize.py' <root dir>
 ```
 
 will change every `__init__.py` under the `<root dir>` directory.
