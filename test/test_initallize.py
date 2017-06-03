@@ -37,7 +37,6 @@ class InitallizeTest(TestCase):
         out_src = os.path.join(rootdir, f'output_{name}_py.src')
         module_dir = _request_new_dir(rootdir, 'tmp_module_')
         init_fpath = os.path.join(module_dir, '__init__.py')
-        module_fpath = os.path.join(module_dir, 'inner_module.py')
 
         with open(out_src) as fin:
             expected_result = fin.read()
