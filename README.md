@@ -140,6 +140,7 @@ to be improved:
 - Support variant style of sorting identifiers
   (currently lower_case, CamelCase, UPPER_CASE, alphabetical order)
 - Support `# noqa: F401` style
+- Support eol other than CR
 
 PR satisfying the above or other issues,
 or testcases criticizing the issues are very welcome.
